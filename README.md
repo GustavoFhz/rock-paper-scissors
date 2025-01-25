@@ -1,48 +1,58 @@
-# Rock Paper Scissors Game
-Descrição
-Este é um jogo simples de Pedra, Papel e Tesoura onde você pode competir contra o computador. O jogo pede ao jogador para fazer uma escolha entre rock, paper ou scissors e, em seguida, o computador faz sua própria escolha aleatória. O vencedor é decidido com base nas regras tradicionais:
+# Rock Paper Scissors
 
-Rock vence Scissors
-Scissors vence Paper
-Paper vence Rock
-O jogo continua até o jogador decidir parar.
+Este é um jogo simples de Pedra, Papel e Tesoura implementado em Java. O jogador escolhe uma das opções e o computador faz uma escolha aleatória. O resultado é determinado de acordo com as regras clássicas do jogo.
 
-Como Jogar
-Quando você iniciar o jogo, será solicitado a digitar "yes" para começar.
-O computador fará uma escolha aleatória.
-Você escolherá rock, paper ou scissors.
-O resultado será exibido, informando se você venceu, perdeu ou empatou.
-Você será perguntado se deseja jogar novamente. Caso deseje, digite "yes", caso contrário, digite "no" para encerrar o jogo.
-Como Executar o Jogo
-Pré-requisitos
-Para rodar este programa, você precisa ter o Java instalado em seu computador.
+## Regras do Jogo
+1. O jogador escolhe entre "rock" (pedra), "paper" (papel) ou "scissors" (tesoura).
+2. O computador gera uma escolha aleatória.
+3. As escolhas são comparadas:
+   - Pedra vence tesoura.
+   - Tesoura vence papel.
+   - Papel vence pedra.
+   - Se ambos escolherem a mesma opção, é um empate.
 
-Baixe e instale o JDK (Java Development Kit) se não tiver instalado.
+## Como Executar o Projeto
 
-Verifique a instalação com o comando:
+1. Certifique-se de ter o Java instalado em seu sistema.
+2. Baixe ou clone este repositório.
+3. Compile o arquivo `RockPaperScissors.java`:
+   ```sh
+   javac RockPaperScissors.java
+   ```
+4. Execute o programa:
+   ```sh
+   java RockPaperScissors
+   ```
+5. Siga as instruções exibidas no terminal para jogar.
 
-bash
-Copy
-Edit
-java -version
+## Estrutura do Código
+O código é composto por:
+- O método `main()`, que gerencia a interação do jogador.
+- O método `computerChoice()`, que gera uma escolha aleatória para o computador.
+- O método `result()`, que determina o vencedor do jogo.
+- O método `printResult()`, que imprime o resultado da partida.
 
-Rodando o Jogo:
-1- Clone ou baixe o repositório do projeto.
+## Exemplo de Saída
+```sh
+Let's play Rock Paper Scissors.
+When I say 'shoot', Choose: rock, paper, or scissors.
 
-2- Abra o terminal ou prompt de comando.
+Are you ready? Write 'yes' if you are.
+> yes
+Great!
+rock - paper - scissors, shoot!
+> rock
+You chose: rock
+The computer chose: scissors
+You win!
+```
 
-3- Navegue até a pasta onde o arquivo RockPaperScissors.java está localizado.
+## Melhorias Futuras
+- Adicionar validação para entradas inválidas do jogador.
+- Implementar um placar para contar vitórias e derrotas.
+- Criar uma interface gráfica para o jogo.
+- Permitir que o jogador escolha o número de rodadas.
 
-4- Compile o código:
+## Licença
+Este projeto é de uso livre para estudos e melhorias.
 
-bash
-Copy
-Edit
-javac RockPaperScissors.java
-
-
-5- Execute o código:
-bash
-Copy
-Edit
-java RockPaperScissors
