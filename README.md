@@ -1,4 +1,4 @@
-Rock Paper Scissors Game
+# Rock Paper Scissors Game
 Descrição
 Este é um jogo simples de Pedra, Papel e Tesoura onde você pode competir contra o computador. O jogo pede ao jogador para fazer uma escolha entre rock, paper ou scissors e, em seguida, o computador faz sua própria escolha aleatória. O vencedor é decidido com base nas regras tradicionais:
 
